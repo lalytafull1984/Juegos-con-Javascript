@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+    background-color: #FFD3D4;
+    padding: 5px 10px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.heading {
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #B49FDC;
+    height: 100px;
+    
+}
+
+.juego {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #E0FEFE;
+    font-size: medium;
+    color: #1c1c1c;
+}
+
+.icon {
+    width: 1.5rem;
+}
+
+#piezas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    justify-content: center ;
+}
+
+#puzzle {
+    border: 1px solid greenyellow;
+    width: 304px;
+    max-height: 304px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.pieza {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.placeholder {
+    background-color: white;
+    border: 0.5px solid greenyellow;
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+}
+
+.placeholder.hover {
+    background-color: greenyellow;
+}
+
+.placeholder .pieza {
+    margin: 0;
+}
+
+#mensaje {
+    color: black;
+    text-align: center;
+    display: none;
+}
+
+
+.ganaste #mensaje {
+    display: block;
+}
+
+.ganaste .placeholder {
+    outline: none;
+}
+
+.ganaste #piezas {
+    display: none;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor-2 img {
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    background-color: #e764b5;
+    border: 1px solid pink;
+    border-radius: 6px;
+}
+
+button:hover {
+    box-shadow: 1px 1px 2px 1px #e95fcb;
+    opacity: 0.8;
+}
+
+.contenedor-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mix {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 180px;
+    padding: 10px 10px;
+    border: 1px solid pink;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#color-1, #color-2, #color-3, #color-4, #color-5, #color-6 {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.arrastre1, .target2 {
+    background-color: yellow;
+}
+
+.target1, .arrastre3 {
+    background-color: blue;
+}
+
+.arrastre2, .target3 {
+    background-color: red;
+}
+
+.dragging:active {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.hover {
+    opacity: 0.5;
+}
+
+.fin {
+    opacity: 0;
+}
+
+.fin2 {
+    background-color: rgb(101, 226, 101);
+    transition: 1s;
+}
+
+.fin3 {
+    background-color: orange;
+    transition: 1s;
+}
+
+.fin4 {
+    background-color: rgb(151, 52, 151);
+    transition: 1s;
+}
+
+@media(max-width: 400px) {
+    body {
+        padding: 2px 4px;
+    }
+
+    .heading {
+        font-size: 1rem;
+        height: 75px;
+    }
+
+    .mix {
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .juego {
+        font-size: small;
+        margin-bottom: 0.5rem;
+        padding: 0.02rem;
+        max-height: fit-content;
+    }
+    
+    .contenedor-2 img {
+        width: 75px;
+        height: 75px;
+    }
+
+    #piezas {
+        flex-direction: initial;
+        height: 300;
+        
+    }
+
+    #puzzle {
+        width: 200px;
+        height: 200px;
+    } 
+
+    .placeholder {
+        width: 98px;
+        height: 98px;
+    }
+
+    .pieza {
+        width: 98px;
+        height: 98px;
+    }
+
+    #color-1, #color-2, #color-3, #color-4, #color-5, #color-6 {
+        width: 75px;
+        height: 75px;
+    }
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡A Jugar!</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <div class="heading">
+        <h1 class="titulo">¡A Jugar!</h1>
+    </div>
+    <section class="juego">
+    <h3><img class="icon" src="../img/puzzle-fill.svg" alt="puzzle"> Puzzle</h3>
+    <p>Arrastra las piezas al lugar correcto para armar el rompecabezas</p>
+        <div class="contenedor">
+            <div id="puzzle"></div>   
+            <div id="piezas"></div> 
+        </div>
+    <h4 id="mensaje">¡Bien Hecho!</h4>
+</section>
+<section class="juego">
+    <h3><img class="icon" src="../img/sound.svg" alt="sonido"> Sonidos de animales</h3>
+    <p>Haz click en los animalitos para escuchar el sonido que hacen</p>
+    <div class="contenedor-2">
+        <button id="btn-1"> <img src="../img/cat.jpg" alt="Gato"></button>
+        <button id="btn-2"><img src="../img/dog.jpg" alt="Perro"></button>
+        <button id="btn-3"><img src="../img/duck.jpg" alt="Pato"></button>
+        <button id="btn-4"><img src="../img/elep.jpg" alt="Elefante"></button>
+        <button id="btn-5"><img src="../img/wolf.jpg" alt="Lobo"></button>
+        <button id="btn-6"><img src="../img/cow.jpg" alt="Vaca"></button>
+        <button id="btn-7"><img src="../img/pig.jpg" alt="Cerdo"></button>
+        <button id="btn-8"><img src="../img/sheep.jpg" alt="Oveja"></button>
+    </div>
+</section>
+<section class="juego">
+  <h3><img class= "icon" src="../img/palette-fill.svg" alt="paleta"> Mezclando colores</h3> 
+  <p>Arrastra el primer color sobre el segundo, para ver qué color resulta al mezclarlos</p> 
+  <div class="contenedor-3">
+    <div class="mix">
+        <div class="arrastre1" id="color-1" draggable="true"></div>
+        <div class="target1" id="color-2"></div>
+    </div>
+    <div class="mix">
+        <div class="arrastre2" id="color-3" draggable="true"></div>
+        <div class="target2" id="color-4"></div>
+    </div>
+    <div class="mix">
+        <div class="arrastre3" id="color-5" draggable="true"></div>
+        <div class="target3" id="color-6"></div>
+    </div>
+  </div>
+</section>
+</body>
+<script src="../js/index.js"></script>
+</html>
